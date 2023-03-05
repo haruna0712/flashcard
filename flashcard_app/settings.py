@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c@08ramlgacrs7*^iw73$3$m@_c@bd^xaruk0-bpf(m%9-(z@*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'flashcard',
 ]
 
-LOGIN_URL='flashcard:login/'
-LOGIN_REDIRECT_URL='flashcard:index/'
+LOGIN_URL='flashcard:login'
+LOGIN_REDIRECT_URL='flashcard:index'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
